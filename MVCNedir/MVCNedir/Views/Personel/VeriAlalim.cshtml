@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VeriAlalim</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <label>Isim</label><br />
+            <input type="text" name="isim" /><br />
+            <label>Soyisim</label><br />
+            <input type="text" name="soyisim" />
+            <input type="submit" value="Gönder"/>
+        }
+    </div>
+</body>
+</html>

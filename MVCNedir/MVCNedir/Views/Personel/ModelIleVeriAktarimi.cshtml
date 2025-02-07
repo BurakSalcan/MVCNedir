@@ -1,0 +1,32 @@
+﻿@model MVCNedir.Models.Personel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ModelIleVeriAktarimi</title>
+</head>
+<body>
+    <div>
+        <div>ID = @Model.ID</div>
+        <div>
+            @{
+                string isim = "Samet";
+            }
+            @if (Model.Isim == "Murtaza")
+            {
+                <label>Merhaba @Model.Isim</label>
+            }
+            else
+            {
+                <label>Merhaba @isim</label>
+            }
+        </div>
+        <div>Soyisim = @Model.Soyisim</div>
+    </div>
+</body>
+</html>

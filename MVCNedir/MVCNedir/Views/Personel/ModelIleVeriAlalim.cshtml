@@ -1,0 +1,25 @@
+﻿@model MVCNedir.Models.Personel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ModelIleVeriAlalim</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <label>Isim</label><br />
+            <input type="text" name="Isim" /><br />
+            <label>Soyisim</label><br />
+            <input type="text" name="Soyisim" /><br />
+            <input type="submit" value="Gönder"/>
+        }
+    </div>
+</body>
+</html>
